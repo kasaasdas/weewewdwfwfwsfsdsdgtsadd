@@ -37,12 +37,6 @@ client.on('message', message => {
                   }
 });
 
-client.on('message', message => {
-      if (message.author.bot) return;
-      var prefix ="$$"
-       if (message.content === prefix + "help-admin") {
-        if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
-       message.channel.send('**تم ارسال رسالة في الخاص**');
-  
+
  
 client.login(process.env.BOT_TOKEN);
