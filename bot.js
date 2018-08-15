@@ -37,7 +37,6 @@ client.on('message', message => {
                   }
 });
 
-
 client.on('message', message => {
       if (message.author.bot) return;
       var prefix ="$$"
@@ -108,6 +107,5 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return mess
   return;
   }
 });
-
 
 client.login(process.env.BOT_TOKEN);
