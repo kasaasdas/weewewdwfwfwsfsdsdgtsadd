@@ -28,4 +28,18 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
+client.on('message', message => {
+                if(message.content === "B.inv") {
+                    let embed = new Discord.RichEmbed ()
+                    embed.setTitle("**:arrow_right: Invite Battellions Bot!**")
+                    .setURL("https://discordapp.com/oauth2/authorize?client_id=476554265020858380&permissions=0&redirect_uri=https%3A%2F%2Fdiscordapp.com%2Fapi%2Foauth2%2Fauthorize%3Fclient_id%3D476554265020858380%26permissions%3D8%26scope%3Dbot&scope=bot");
+                   message.channel.sendEmbed(embed);
+                  }
+});
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
