@@ -47,7 +47,6 @@ client.on('message', message => {
   
   
   
-  
    message.author.sendMessage(`
    **
   [❖═════اومر ادمن═══════❖]
@@ -75,9 +74,6 @@ client.on('message', message => {
   
       }
   });
-
-
-
 
 
 client.login(process.env.BOT_TOKEN);
