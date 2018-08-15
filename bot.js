@@ -28,7 +28,6 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-
 client.on('message', message => {
                 if(message.content === "B.inv") {
                     let embed = new Discord.RichEmbed ()
@@ -38,5 +37,4 @@ client.on('message', message => {
                   }
 });
 
- 
 client.login(process.env.BOT_TOKEN);
