@@ -37,6 +37,7 @@ client.on('message', message => {
                   }
 });
 
+
 const prefix = "$";
 client.on('message', async message =>{
 const ms = require("ms");
@@ -104,4 +105,6 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return mess
   }
  
 });
+
+
 client.login(process.env.BOT_TOKEN);
