@@ -64,7 +64,7 @@ hours = hours - 12;
 if (hours == 0) {
 hours = 12;
 }
-      time.setName(`Time :[${1} : ${16} : ${50} ${suffix}]`);
+      time.setName(`Time :[${hours} : ${minutes} : ${Seconds} ${suffix}]`);
  },1000);
   });
   }
