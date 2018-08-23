@@ -50,7 +50,7 @@ client.on('message',async msg => {
     });
   setInterval(() => {
       var currentTime = new Date(),
-hours = currentTime.getHours() + 3 ,
+hours = currentTime.getHours() + 2 ,
 minutes = currentTime.getMinutes(),
 Seconds = currentTime.getSeconds()
 if (minutes < 10) {
