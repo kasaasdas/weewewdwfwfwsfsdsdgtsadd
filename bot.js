@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const tokan = "توكنك"
 const client = new Discord.Client();
 const prefix = '.'
 
