@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const tokan = "توكنك"
+const tokan = "NDUzMjg3NDcxOTY3MzcxMjc0.Dl_UxQ.VXfe_pm5NylvU6clmnxnO67LN2w"
 const client = new Discord.Client();
 const prefix = '.'
 
