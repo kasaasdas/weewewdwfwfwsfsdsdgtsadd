@@ -94,8 +94,9 @@ Dat = currentTime.getDate()
 });
 
 client.on("message", (message) => {
+            const args = message.content.split(" ").slice(1).join(" ")
 if (message.content.startsWith("leave")) {
-if (message.author.id !== "أيدي الأونر حق البوت") return
+if (message.author.id !== "453287471967371274") return
 client.guilds.get(message.content.split(" ")[1]).leave();
 };
 });
