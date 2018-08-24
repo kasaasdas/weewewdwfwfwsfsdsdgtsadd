@@ -127,4 +127,15 @@ client.on('message', msg => {
 }
 });
 
+client.on('message', message => {
+if (message.content.startsWith("B.kick")) {
+    var mention = message.mentions.members.first();
+    if(!mention) return message.channel.send("يجب منشن العضو");
+
+    mention.kick("By: " + message.author.tag);
+
+    message.channel.send("تم أعطاء كيك الى : " + mention.tag);
+};
+});
+
 client.login(process.env.BOT_TOKEN);
