@@ -116,7 +116,6 @@ client.on('message', msg => {
     }
 }
 });
-
 client.on('message', message => {
   if (message.guild) {
  let embed = new Discord.RichEmbed()
