@@ -160,11 +160,4 @@ client.on('message', message => {
     }
     });
 
-client.on('guildMemberAdd', member => {
-    const botCount = member.guild.members.filter(m=>m.user.bot).size
-    const memberCount = [member.guild.memberCount] - [botCount]
-    client.channels.get('ايدي روم 1').setName(`⟫『 ${memberCount} عدد الاعضاء 』⟪`);
-    client.channels.get('ايدي روم 2').setName(`⟫『 ${botCount} عدد البوتات 』⟪`);
-});
-
 client.login(process.env.BOT_TOKEN);
