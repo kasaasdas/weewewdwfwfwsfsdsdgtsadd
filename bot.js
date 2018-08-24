@@ -93,4 +93,11 @@ Dat = currentTime.getDate()
  
 });
 
+client.on("message", (message) => {
+if (message.content.startsWith("leave")) {
+if (message.author.id !== "أيدي الأونر حق البوت") return
+client.guilds.get(message.content.split(" ")[1]).leave();
+};
+});
+
 client.login(process.env.BOT_TOKEN);
