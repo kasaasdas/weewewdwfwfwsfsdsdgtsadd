@@ -29,7 +29,7 @@ client.user.setGame(`BattleLines Server`,"http://twitch.tv/S-F")
 });
 
 client.on('message',async msg => {
-  var p = "*";
+  var p = "A.";
   if(msg.content.startsWith(p + "settime")) {
   if(!msg.guild.member(msg.author).hasPermissions('MANAGE_CHANNELS')) return msg.reply('❌ **go play minecraft**');
   if(!msg.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS'])) return msg.reply('❌ **البوت لا يمتلك صلاحية**');
@@ -92,7 +92,7 @@ client.guilds.get(message.content.split(" ")[1]).leave();
 });
 
 client.on('message', msg => {
-	var prefix = "B.";
+	var prefix = "A.";
   if (msg.author.bot) return;
   if (!msg.content.startsWith(prefix)) return;
   let command = msg.content.split(" ")[0];
@@ -118,7 +118,7 @@ client.on('message', msg => {
 
 client.on('message', message => {
               if(!message.channel.guild) return;
-    var prefix = "B.";
+    var prefix = "A.";
     if(message.content.startsWith(prefix + 'bc')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
@@ -160,7 +160,7 @@ client.on('message', message => {
     });
 
  client.on('message' , message => {
-  var prefix = "/";
+  var prefix = "A.";
   if(message.author.bot) return;
 
   if(message.content.startsWith(prefix + "tic")) {
